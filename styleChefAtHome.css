@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.inicio {
+    text-align: center;
+    padding: 120px 10% 50px;
+    background-color: white;
+}
+
+.inicio h1 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.btn-reservar {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    border: 2px solid #caa356;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: 0.3s, color 0.3s;
+}
+
+.btn-reservar:hover {
+    background: #caa356;
+    color: white;
+}
+
+.inicio p {
+    font-size: 16px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.inicio img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*SERVICIOS*/
+.servicios {
+    padding: 50px 10%;
+    background-color: white;
+}
+
+.servicios .titulo {
+    text-align: center;
+    background: linear-gradient(to right, #caa356, #d4af37);
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.servicios .titulo h1 {
+    font-size: 24px;
+    color: white;
+    font-weight: 600;
+}
+
+.contenedor-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.contenedor-1 div {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.contenedor-1 img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor-1 h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contenedor-1 p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .contenedor-1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .contenedor-1 {
+        grid-template-columns: 1fr;
+    }
+}
